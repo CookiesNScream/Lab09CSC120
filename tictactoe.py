@@ -108,8 +108,9 @@ for x in range(4):
   if win()==True:
     print("Player 2 wins")
     break
-p1turn()
-if win()==True:
-  print("Player 1 wins")
+if win()==False:
+  p1turn()
+  if win()==True:
+    print("Player 1 wins")
 else:
-  print("Its a tie")
+  print("Its a draw")
